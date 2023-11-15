@@ -257,6 +257,240 @@ body {
 
 /* ======== /HEADR MOBILE STYLES ======== */
 
+/* ======== BACKDROP MOBILE ============ */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.40);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.backdrop.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+/* ======== MODAL WINDOW STYLES ========== */
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding-top: 72px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 34px;
+    transform: translate(-50%, -50%);
+    width: 288px;
+    min-height: 584px;
+    border-radius: 4px;
+    background-color: #FCFCFC;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.model-close-btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #e7e9fc;
+    padding: 0px;
+    line-height: 0;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.model-close-btn:hover {
+    background-color: #404bbf;
+    border: none;
+}
+
+.model-close-btn:focus {
+    background-color: #404bbf;
+    border: none;
+}
+
+.modal-close-btn-icon {
+    fill: #2f2f42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.model-close-btn:hover .modal-close-btn-icon,
+.model-close-btn:focus .modal-close-btn-icon {
+    fill: #FFFFFF;
+}
+
+.contacts-form-discription {
+    width: 100%;
+    margin-bottom: 16px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+/* ======== /MODAL WINDOW STYLES ========= */
+
+/* ======== CONTACTS FORM STYLES ============= */
+.contacts-form-field-wrapper {
+    margin-bottom: 8px;
+}
+
+.contacts-form-field-lable {
+    display: block;
+    margin-bottom: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+}
+
+.contacts-form-unput-wrapper {
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.contacts-form-name {
+    padding-left: 38px;
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    background-color: transparent;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-form-field-icon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-form-field-wrapper-textarea {
+    margin-bottom: 16px;    
+}
+
+.contacts-form-message {
+    padding: 8px 16px;
+    width: 100%;
+    height: 120px;
+    border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    resize: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    background-color: transparent;
+    outline: transparent;
+    color: rgba(46, 47, 66, 0.40);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-form-checkbox-lable {
+    font-family: 'Roboto', san-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+}
+
+.contacts-form-message::placeholder {
+    color: rgba(46, 47, 66, 0.40);
+}
+
+.contacts-form-checkbox-wrapper {
+    margin-bottom: 24px;
+}
+
+.privacy-policy-link {    
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    text-decoration-line: underline;
+    color: #4D5AE5;
+}
+
+.contacts-form-own-checkbox {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    fill: transparent;
+    margin-right: 8px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-form-checkbox:checked+.contacts-form-checkbox-lable .contacts-form-own-checkbox {
+    background-color: #404BBF;
+    border: none;
+    fill: #F4F4FD;
+}
+
+.contacts-form-checkbox:focus+.contacts-form-checkbox-lable .contacts-form-own-checkbox {
+    outline: 2px solid rgba(0, 0, 255, 0.5);
+}
+
+.contacts-form-btn {
+    display: block;
+    align-items: flex-start;
+    gap: 10px;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 169px;
+    height: 56px;
+    padding: 16px 32px;
+    align-items: flex-start;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: #4D5AE5;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-form-btn:focus,
+.contacts-form-btn:hover {
+    color: #ffffff
+}
+
+/* ======== /CONTACTS FORM STYLES ========= */
+/* ======== /BACKDROP MOBILE ============ */
 
 
 
@@ -286,11 +520,252 @@ body {
         display: none;
     }
     
-    /* ======== /HEADR TABLET STYLES ======== */
+/* ======== /HEADR TABLET STYLES ======== */
     
 
-    
+/* ======== /HEADR TABLET STYLES ======== */
+
+/* ====== BACKDROP TABLET, DESCTOP ===== */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.40);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
+
+.backdrop.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+/* ======== MODAL WINDOW STYLES ============= */
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding-top: 72px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+    transform: translate(-50%, -50%);
+    width: 408px;
+    min-height: 584px;
+    border-radius: 4px;
+    background-color: #FCFCFC;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.model-close-btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #e7e9fc;
+    padding: 0px;
+    line-height: 0;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.model-close-btn:hover {
+    background-color: #404bbf;
+    border: none;
+}
+
+.model-close-btn:focus {
+    background-color: #404bbf;
+    border: none;
+}
+
+.modal-close-btn-icon {
+    fill: #2f2f42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.model-close-btn:hover .modal-close-btn-icon,
+.model-close-btn:focus .modal-close-btn-icon {
+    fill: #FFFFFF;
+}
+
+.contacts-form-discription {
+    width: 100%;
+    margin-bottom: 16px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2E2F42;}
+/* ======== /MODAL WINDOW STYLES ============= */
+
+/* ======== CONTACTS FORM STYLES ============= */
+.contacts-form-field-wrapper {
+    margin-bottom: 8px;
+}
+
+.contacts-form-field-lable {
+    display: block;
+    margin-bottom: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+}
+
+.contacts-form-unput-wrapper {
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.contacts-form-name {
+    padding-left: 38px;
+    width: 360px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    background-color: transparent;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-form-field-icon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-form-field-wrapper-textarea {
+    margin-bottom: 16px;
+}
+
+.contacts-form-message {
+    padding: 8px 16px;
+    width: 360px;
+    height: 120px;
+    border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    resize: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    background-color: transparent;
+    outline: transparent;
+    color: rgba(46, 47, 66, 0.40);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-form-checkbox-lable {
+    font-family: 'Roboto', san-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+}
+
+.contacts-form-message::placeholder {
+    color: rgba(46, 47, 66, 0.40);
+}
+
+.contacts-form-checkbox-wrapper {
+    margin-bottom: 24px;
+}
+
+.privacy-policy-link {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    text-decoration-line: underline;
+    color: #4D5AE5;
+}
+
+.contacts-form-own-checkbox {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    fill: transparent;
+    margin-right: 8px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-form-checkbox:checked+.contacts-form-checkbox-lable .contacts-form-own-checkbox {
+    background-color: #404BBF;
+    border: none;
+    fill: #F4F4FD;
+}
+
+.contacts-form-checkbox:focus+.contacts-form-checkbox-lable .contacts-form-own-checkbox {
+    outline: 2px solid rgba(0, 0, 255, 0.5);
+}
+
+.contacts-form-btn {
+    display: block;
+    align-items: flex-start;
+    gap: 10px;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 169px;
+    height: 56px;
+    padding: 16px 32px;
+    align-items: flex-start;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: #4D5AE5;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-form-btn:focus,
+.contacts-form-btn:hover {
+    color: #ffffff
+}
+/* ======== /CONTACTS FORM STYLES ============= */
+/* ===== /BACKDROP TABLET, DESCTOP ==== */
+
+
+
+
+}
+
+
+
+
 /* ======== /TABLET STYLES ======== */
 
 
@@ -305,7 +780,31 @@ body {
     }
     /* ======== HEADR DESKTOP STYLES ======== */
     
+
+
+
+
+
+
+    /* ===== /BACKDROP DESCTOP ==== */
+    /* ======== /CONTACTS FORM STYLES ============= */    
+        .contacts-form-name:focus {
+            outline-color: transparent;
+            outline-offset: 6px;
+            border-color: #4d5ae5;
+        }
     
+        .contacts-form-name:focus+.contacts-form-field-icon {
+            fill: #4d5ae5;
+        }
+
+        .contacts-form-message:focus {
+            outline-color: transparent;
+            outline-offset: 6px;
+            border-color: #4D5AE5
+        }
+    /* ======== /CONTACTS FORM STYLES ============= */
+    /* ===== /BACKDROP DESCTOP ==== */    
     
     /* ======== /HEADR DESKTOP STYLES ======== */
     
