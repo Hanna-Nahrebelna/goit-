@@ -63,7 +63,6 @@ body {
     padding-right: 16px;
 }
 /* ======== /COMMON STYLES ======== */
-
 /* ======== MOBILE STYLES ======== */
 
 /* ======== HEADR MOBILE STYLES ======== */
@@ -243,7 +242,6 @@ body {
         width: 24px;
         height: 24px;
     }
-
     /* ======== /HEADR MOBILE MENU STYLES ======== */
 }
 
@@ -254,7 +252,6 @@ body {
         margin-right: auto;
     }
 }
-
 /* ======== /HEADR MOBILE STYLES ======== */
 
 /* ======== BACKDROP MOBILE ============ */
@@ -278,7 +275,7 @@ body {
     pointer-events: auto;
 }
 
-/* ======== MODAL WINDOW STYLES ========== */
+/* ======== MODAL WINDOW MOBILE STYLES ========== */
 .modal {
     position: absolute;
     top: 50%;
@@ -344,9 +341,9 @@ body {
     letter-spacing: 0.02em;
     color: #2E2F42;
 }
-/* ======== /MODAL WINDOW STYLES ========= */
+/* ======== /MODAL WINDOW MOBILE STYLES ========= */
 
-/* ======== CONTACTS FORM STYLES ============= */
+/* ======== CONTACTS FORM MOBILE STYLES ============= */
 .contacts-form-field-wrapper {
     margin-bottom: 8px;
 }
@@ -488,9 +485,9 @@ body {
 .contacts-form-btn:hover {
     color: #ffffff
 }
-
-/* ======== /CONTACTS FORM STYLES ========= */
+/* ======== /CONTACTS FORM MOBILE STYLES ========= */
 /* ======== /BACKDROP MOBILE ============ */
+
 
 
 
@@ -506,11 +503,8 @@ body {
     /* ======== HEADR TABLET STYLES ======== */
     .menu {
         display: flex;
-    }
-
-    .contacts {
-        display: flex;
-    }
+        gap: 40px;
+    }   
     
     .mobail-menu {
         display: none;
@@ -519,11 +513,103 @@ body {
     .mobile-open-btn {
         display: none;
     }
+
+    .logotype {
+        margin-right: 120px;
+    }
     
-/* ======== /HEADR TABLET STYLES ======== */
+    .page-navigation {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-item {
+        column-gap: 40px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    
+    .menu-link {
+        padding: 24px 0;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #2E2F42;
+        transition: color 250ms linear;
+    }
+    
+    .menu-link-studio {
+        padding: 24px 0;
+        position: relative;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .menu-link:hover,
+    .menu-link:focus {
+        color: #404BBF;
+    }
     
 
-/* ======== /HEADR TABLET STYLES ======== */
+    .contacts {
+        display: flex;
+        font-style: normal;
+    }
+    
+    .list-contacts {
+        gap: 40px;
+    }
+
+    .links-item-email {
+        margin-bottom: 12px;        
+    }
+
+    .contacts-link {        
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.175;
+        letter-spacing: 0.04em;
+        color: #434455;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .contacts-link:hover,
+    .contacts-link:focus {
+        color: #404bbf;
+    }
+
+    .contacts-link-email {
+        margin-bottom: 12px;
+    }
+    
+    .current {
+        position: relative;
+        color: #404bbf;
+    }
+    
+    .current::after {
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        content: '';
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: #404BBF;
+    }
+    
+    .menu-item-stodio:hover .menu-link-studio {
+        transform: translateY(0%);
+    }
+
+
 
 /* ====== BACKDROP TABLET, DESCTOP ===== */
 .backdrop {
@@ -546,7 +632,9 @@ body {
     pointer-events: auto;
 }
 
-/* ======== MODAL WINDOW STYLES ============= */
+
+
+/* === MODAL WINDOW TABLET, DESCTOP STYLES === */
 .modal {
     position: absolute;
     top: 50%;
@@ -611,9 +699,9 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2E2F42;}
-/* ======== /MODAL WINDOW STYLES ============= */
+/* === /MODAL WINDOW TABLET, DESCTOP STYLES === */
 
-/* ======== CONTACTS FORM STYLES ============= */
+/* ======== CONTACTS FORM TABLET STYLES ============= */
 .contacts-form-field-wrapper {
     margin-bottom: 8px;
 }
@@ -755,10 +843,9 @@ body {
 .contacts-form-btn:hover {
     color: #ffffff
 }
-/* ======== /CONTACTS FORM STYLES ============= */
+/* ======== /CONTACTS FORM TABLET STYLES ====== */
 /* ===== /BACKDROP TABLET, DESCTOP ==== */
-
-
+/* ======== /HEADR TABLET STYLES ======== */
 
 
 }
@@ -770,40 +857,67 @@ body {
 
 
 
+
+
+
+
 /* ======== DESKTOP STYLES ======== */
 
 @media screen and (min-width: 1158px) {
     .container {
         width: 1158px;
+        margin-left: auto;
+        margin-right: auto;
         padding-left: 15px;
         padding-right: 15px;
     }
-    /* ======== HEADR DESKTOP STYLES ======== */
-    
 
+    /* ======== HEADR DESKTOP STYLES ======== */
+    .logtype {
+       margin-right: 76px;
+    }
+
+    .links-item-email {
+        margin-bottom: 0;
+    }
+    
+    .contacts-link {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .list-contacts {
+        display: flex;
+        gap: 40px;
+    }
 
 
 
 
 
     /* ===== /BACKDROP DESCTOP ==== */
-    /* ======== /CONTACTS FORM STYLES ============= */    
-        .contacts-form-name:focus {
-            outline-color: transparent;
-            outline-offset: 6px;
-            border-color: #4d5ae5;
-        }
+    /* ======== /CONTACTS FORM DESCTOP STYLES ============= */    
+    .contacts-form-name:focus {
+        outline-color: transparent;
+        outline-offset: 6px;
+        border-color: #4d5ae5;
+    }
     
-        .contacts-form-name:focus+.contacts-form-field-icon {
-            fill: #4d5ae5;
-        }
+    .contacts-form-name:focus+.contacts-form-field-icon {
+        fill: #4d5ae5;
+    }
 
-        .contacts-form-message:focus {
-            outline-color: transparent;
-            outline-offset: 6px;
-            border-color: #4D5AE5
-        }
-    /* ======== /CONTACTS FORM STYLES ============= */
+    .contacts-form-message:focus {
+        outline-color: transparent;
+        outline-offset: 6px;
+        border-color: #4D5AE5
+    }
+    /* == /CONTACTS FORM DESCTOP STYLES ==== */
     /* ===== /BACKDROP DESCTOP ==== */    
     
     /* ======== /HEADR DESKTOP STYLES ======== */
