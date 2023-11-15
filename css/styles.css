@@ -63,8 +63,8 @@ body {
     padding-right: 16px;
 }
 /* ======== /COMMON STYLES ======== */
-/* ======== MOBILE STYLES ======== */
 
+/* ======== BODY MOBILE STYLES ======== */
 /* ======== HEADR MOBILE STYLES ======== */
 .menu {
     display: none;
@@ -252,7 +252,7 @@ body {
         margin-right: auto;
     }
 }
-/* ======== /HEADR MOBILE STYLES ======== */
+
 
 /* ======== BACKDROP MOBILE ============ */
 .backdrop {
@@ -485,13 +485,82 @@ body {
 .contacts-form-btn:hover {
     color: #ffffff
 }
-/* ======== /CONTACTS FORM MOBILE STYLES ========= */
+/* ===== /CONTACTS FORM MOBILE STYLES ==== */
 /* ======== /BACKDROP MOBILE ============ */
+/* ======== /HEADR MOBILE STYLES ======== */
+
+/* ======== HERO MOBILE STYLES ======== */
+.hero {
+    max-width: 767px;
+    height: 432px;
+    padding: 72px 16px;
+    background-color: #2e2f42;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/hero/people-office.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main-title {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    max-width: 157px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 72px;
+}
+
+.button-mail {
+    display: block;
+    padding: 16px 32px;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    background-color: #4D5AE5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-mail:hover,
+.button-mail:focus {
+    color: #FFFFFF;
+    background-color: #404BBF;
+}
+
+/* ======== /HERO MOBILE STYLES ======== */
 
 
+/*======= OUR BENEFITS MOBILE STYLE ==== */
+
+/*======= /OUR BENEFITS MOBILE STYLE ==== */
+
+/*======= OUR TEAM MOBILE STYLE ==== */
+
+/*======= /OUR TEAM MOBILE STYLE ==== */
 
 
-/* ======== /MOBILE STYLES ======== */
+/*======= OUR PORTFOLIO MOBILE STYLE ==== */
+
+/*======= /OUR PORTFOLIO MOBILE STYLE ==== */
+
+
+/* ======== FOOTER MOBILE STYLES ======== */
+
+/* ======== /FOOTER MOBILE STYLE =========== */
+
+/* ======== /BODY MOBILE STYLES ======== */
 
 
 
@@ -501,6 +570,11 @@ body {
         width: 768px;
     }
     /* ======== HEADR TABLET STYLES ======== */
+    .page-header {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
     .menu {
         display: flex;
         gap: 40px;
@@ -631,8 +705,6 @@ body {
     visibility: visible;
     pointer-events: auto;
 }
-
-
 
 /* === MODAL WINDOW TABLET, DESCTOP STYLES === */
 .modal {
@@ -847,6 +919,35 @@ body {
 /* ===== /BACKDROP TABLET, DESCTOP ==== */
 /* ======== /HEADR TABLET STYLES ======== */
 
+/* ======== HERO TABLET STYLES ======== */
+.hero {    
+    max-width: 1139px;
+    height: 436px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 112px 0px;
+    background-color: #2e2f42;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/hero/people-office.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main-title {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
+}
+/* ======== /HERO TABLET STYLES ======== */
+
+
 
 }
 
@@ -895,12 +996,8 @@ body {
         display: flex;
         gap: 40px;
     }
-
-
-
-
-
     /* ===== /BACKDROP DESCTOP ==== */
+
     /* ======== /CONTACTS FORM DESCTOP STYLES ============= */    
     .contacts-form-name:focus {
         outline-color: transparent;
@@ -918,9 +1015,45 @@ body {
         border-color: #4D5AE5
     }
     /* == /CONTACTS FORM DESCTOP STYLES ==== */
-    /* ===== /BACKDROP DESCTOP ==== */    
-    
+    /* ===== /BACKDROP DESCTOP ==== */        
     /* ======== /HEADR DESKTOP STYLES ======== */
+
+    /* ======== HERO DESKTOP STYLES ======== */
+        .hero {
+            max-width: 1440px;
+            height: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 188px 0px;
+            background-color: #2e2f42;
+            background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/hero/people-office.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    
+        .main-title {
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 56px;
+            line-height: 1.07;
+            letter-spacing: 0.02em;
+            color: #FFFFFF;
+            max-width: 496px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 48px;
+        }
+    /* ======== /HERO DESKTOP STYLES ======== */
+
+
+
+
+
+
+
+
+
     
 }
 /* ======== /DESKTOP STYLES ======== */
