@@ -551,6 +551,46 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 
 
 /*======= OUR BENEFITS MOBILE STYLE ==== */
+.our-benefits {
+    padding: 96px 0;
+}
+
+.imag-benefits {
+    display: none;
+}
+
+.our-list {
+    display: inline-block;       
+    margin-bottom: 84px;
+    align-items: center;
+}
+
+.our-list-mob-tab {
+    margin-bottom: 96px;
+}
+
+.benefits {   
+    margin-bottom: 8px;   
+    text-align: center;
+    width: 100%;    
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;    
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42;
+}
+.benefits-text {     
+    max-width: 288px;         
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;        
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+
 
 /*======= /OUR BENEFITS MOBILE STYLE ==== */
 
@@ -947,21 +987,79 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     margin-right: auto;
         margin-bottom: 48px;
     }
+
+    /* ======== /HERO TABLET STYLES ======== */
+
+@media screen and (min-width: 768px) {
+    .our-benefits {
+            padding: 120px 0;
+        }
+    
+        .imag-benefits {
+            column-gap: 24px;
+            justify-content: center;
+            margin-bottom: 8px;
+        }
+    
+        .icon-benefits {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px 100px;
+            width: 264px;
+            height: 112px;
+            border: 1px solid #8E8F99;
+            background-color: #f4f4fd;
+            border-radius: 4px;
+            margin-bottom: 8px;
+        }
+
 }
 
 @media screen and (min-resolution: 192dpi) and (min-width: 768px),
 screen and (min-resolution: 2dppx) and (min-width: 768px),
 screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
     .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/hero/people-office-tablet@2x.jpg);
-        
-        }
+            background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/hero/people-office-tablet@2x.jpg);
+    }
 }
-/* ======== /HERO TABLET STYLES ======== */
 
+    /* ======== /HERO TABLET STYLES ======== */
+    
 @media screen and (min-width: 768px) {
+/*======= OUR BENEFITS TABLET STYLE ==== */
+    .list-benefits {
+            gap: 24px;            
+        }
+
+    .our-list {
+        width: calc((100% - 24px) / 2);        
+    }
+
+    .benefits {
+        text-align: left;
+    }
+
+    
+
+   
+            
+/*======= /OUR BENEFITS TABLET STYLE ==== */
+            
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ======== /TABLET STYLES ======== */
@@ -1067,6 +1165,115 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1200px) {
 
 
 @media screen and (min-width: 1158px) {
+/*======= OUR BENEFITS DESKTOP STYLE ==== */
+    .our-benefits {
+        padding: 120px 0;
+    }
+    
+    .imag-benefits {
+        display: flex;
+        column-gap: 24px;
+        justify-content: center;
+        margin-bottom: 8px;
+    }
+    
+    .icon-benefits {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px 100px;
+        width: 264px;
+        height: 112px;
+        border: 1px solid #8E8F99;
+        background-color: #f4f4fd;
+        border-radius: 4px;
+        margin-bottom: 8px;
+    }
+
+    .list-benefits {
+        display: flex;
+        gap: 24px;
+    }
+
+    .our-list {
+        width: calc((100% - 72px) / 4);
+    }
+
+    .title-benefits {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: #2E2F42;
+        background-color: #FFFFFF;
+    }
+
+    .benefits {
+        margin-bottom: 8px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #2E2F42;
+    }
+
+    .benefits-text { 
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+    }
+
+    .imag-column-benefits {
+        fill: #2E2F42;         
+    }
+
+    .list-benefits {
+        gap: 24px;
+    }
+
+    .our-list {
+        width: calc((100% - 72px) / 4);
+    }
+
+    .title-benefits {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: #2E2F42;
+        background-color: #FFFFFF;
+    }
+
+    .benefits {
+        margin-bottom: 8px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #2E2F42;
+    }
+
+    .benefits-text {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+    }
+
+    .imag-column-benefits {
+        fill: #2E2F42;
+    }    
+/*======= /OUR BENEFITS DESKTOP STYLE ==== */
     
 }
 
