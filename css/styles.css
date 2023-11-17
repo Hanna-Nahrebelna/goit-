@@ -101,7 +101,7 @@ body {
     color: #2e2f42;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     /* ======== HEADR MOBILE MENU STYLES ======== */
     .mobile-open-btn {
         border: none;
@@ -252,7 +252,6 @@ body {
         margin-right: auto;
     }
 }
-
 
 /* ======== BACKDROP MOBILE ============ */
 .backdrop {
@@ -552,6 +551,9 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 
 /*======= OUR BENEFITS MOBILE STYLE ==== */
 .our-benefits {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 96px 0;
 }
 
@@ -559,14 +561,12 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     display: none;
 }
 
-.our-list {
-    display: inline-block;       
-    margin-bottom: 84px;
-    align-items: center;
+.our-list {           
+    margin-bottom: 84px;    
 }
 
-.our-list-mob-tab {
-    margin-bottom: 96px;
+.our-list-mob {
+    margin-bottom: 0;
 }
 
 .benefits {   
@@ -589,17 +589,161 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     letter-spacing: 0.02em;
     color: #434455;
 }
-
-
-
 /*======= /OUR BENEFITS MOBILE STYLE ==== */
 
 /*======= OUR TEAM MOBILE STYLE ==== */
+.our-team {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: #F4F4FD;
+}
 
+.title-team {
+    margin-bottom: 72px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42;
+}
+
+.team-name {
+    padding: 32px 0;
+}
+
+.team-personal {
+    margin-bottom: 72px;
+    max-width: 264px; 
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow:
+        0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.team-personal-daniel {
+    margin-bottom: 0;
+}
+
+.team {
+    text-align: center;
+    margin-bottom: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+
+.team-text {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.social-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.social-list-link {
+    display: block;     
+    line-height: 0px;    
+    padding: 12px;
+    border-radius: 50%;
+    background-color: #4D5AE5;        
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+    background-color: #404bbf;
+}
+
+.social-list-icon {
+    transition: stroke 250ms linear;
+    fill: #F4F4FD;    
+}
+
+.social-list-link {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 /*======= /OUR TEAM MOBILE STYLE ==== */
 
-
 /*======= OUR PORTFOLIO MOBILE STYLE ==== */
+.our-portfolio {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.title-portfolio {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42;
+    margin-bottom: 72px;
+}
+
+.portfolio-text {
+    margin-top: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.colums-portfolio {
+    column-gap: 24px;
+    flex-wrap: wrap;
+    row-gap: 48px;
+}
+
+.section-portfolio:hover,
+.section-portfolio:focus {
+    box-shadow:
+        0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.section-portfolio {
+    margin-bottom: 48px;
+}
+
+.section-portfolio-marketing {
+    margin-bottom: 0;
+}
+
+.text-overlay {
+    display: none;
+}
+
+.border-portfolio {
+    border: 1px solid #E7E9FC;
+    padding: 32px 16px;
+    border-top: none;
+}
+
+
+
+
 
 /*======= /OUR PORTFOLIO MOBILE STYLE ==== */
 
@@ -617,7 +761,8 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     .container {
         width: 768px;
     }
-    /* ======== HEADR TABLET STYLES ======== */
+
+/* ======== HEADR TABLET STYLES ======== */
     .page-header {
         padding-top: 0;
         padding-bottom: 0;
@@ -676,8 +821,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     .menu-link:hover,
     .menu-link:focus {
         color: #404BBF;
-    }
-    
+    }    
 
     .contacts {
         display: flex;
@@ -987,8 +1131,10 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     margin-right: auto;
         margin-bottom: 48px;
     }
+}
 
-    /* ======== /HERO TABLET STYLES ======== */
+
+/* ======== /HERO TABLET STYLES ======== */
 
 @media screen and (min-width: 768px) {
     .our-benefits {
@@ -1024,44 +1170,74 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
     }
 }
 
-    /* ======== /HERO TABLET STYLES ======== */
-    
+ 
 @media screen and (min-width: 768px) {
 /*======= OUR BENEFITS TABLET STYLE ==== */
     .list-benefits {
-            gap: 24px;            
-        }
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;            
+    }
 
     .our-list {
         width: calc((100% - 24px) / 2);        
     }
 
+    .our-list-tab {
+        margin-bottom: 0;
+    }
+    
     .benefits {
         text-align: left;
     }
 
-    
-
-   
-            
 /*======= /OUR BENEFITS TABLET STYLE ==== */
-            
+
+/*======= OUR TEAM TABLET STYLE ==== */
+    .colums-team {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;       
+    }
+
+    .team-personal {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .team-personal-camila {
+        margin-bottom: 0;
+    }
+
+/* прописати медіаправило для зобрежнь */
+
+/*======= /OUR TEAM TABLET STYLE ==== */
+}
+
+@media screen and (min-width: 768px) {
+/*======= OUR PORTFOLIO TABLET STYLE ==== */
+    .colums-portfolio {
+        display: flex;
+        column-gap: 24px;
+        flex-wrap: wrap;
+        row-gap: 48px;
+    }
+    
+    .section-portfolio {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .section-portfolio-design {
+        margin-bottom: 0;
+    }
+
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*======= /OUR PORTFOLIO TABLET STYLE ==== */
 /* ======== /TABLET STYLES ======== */
 
 
@@ -1081,7 +1257,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
         padding-right: 15px;
     }
 
-    /* ======== HEADR DESKTOP STYLES ======== */
+/* ======== HEADR DESKTOP STYLES ======== */
     .logtype {
        margin-right: 76px;
     }
@@ -1104,9 +1280,9 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
         display: flex;
         gap: 40px;
     }
-    /* ===== /BACKDROP DESCTOP ==== */
+/* ===== /BACKDROP DESCTOP ==== */
 
-    /* ======== /CONTACTS FORM DESCTOP STYLES ============= */    
+/* ==== CONTACTS FORM DESCTOP STYLES ==== */    
     .contacts-form-name:focus {
         outline-color: transparent;
         outline-offset: 6px;
@@ -1122,11 +1298,11 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
         outline-offset: 6px;
         border-color: #4D5AE5
     }
-    /* == /CONTACTS FORM DESCTOP STYLES ==== */
-    /* ===== /BACKDROP DESCTOP ==== */        
-    /* ======== /HEADR DESKTOP STYLES ======== */
+/* == /CONTACTS FORM DESCTOP STYLES ==== */
+/* ===== /BACKDROP DESCTOP ==== */        
+/* ======== /HEADR DESKTOP STYLES ======== */
 
-    /* ======== HERO DESKTOP STYLES ======== */
+/* ======== HERO DESKTOP STYLES ======== */
         .hero {
             max-width: 1440px;
             height: 600px;
@@ -1238,6 +1414,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1200px) {
 
     .our-list {
         width: calc((100% - 72px) / 4);
+        margin-bottom: 0;
     }
 
     .title-benefits {
@@ -1274,17 +1451,75 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1200px) {
         fill: #2E2F42;
     }    
 /*======= /OUR BENEFITS DESKTOP STYLE ==== */
-    
+
+/*======= OUR TEAM DESKTOP STYLE ==== */
+    .team-personal {
+        width: calc((100% - 72px) / 4);
+    }
+
+    .team-personal {
+        margin-bottom: 0;
+    }
+/*======= /OUR TEAM DESKTOP STYLE ==== */
+  
+
+/*додати медіаправила для фото*/
+
 }
 
+@media screen and (min-width: 1158px) {
+/*======= OUR PORTFOLIO DESKTOP STYLE ==== */
+
+    .our-portfolio {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+
+    .colums-portfolio {
+        column-gap: 24px;
+        flex-wrap: wrap;
+        row-gap: 48px;
+    }
+    
+    .section-portfolio {
+        width: calc((100% - 48px) / 3);
+    }
+
+.text-overlay {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 40px 32px;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #F4F4FD;
+    background-color: #4D5AE5;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlay-wrater {
+    position: relative;
+    overflow: hidden;
+}
+
+.section-portfolio:hover .text-overlay {
+    transform: translateY(0%);
+}
+
+.section-portfolio {
+    margin-bottom: 0;
+}
+
+}
+/*======= /OUR PORTFOLIO DESKTOP STYLE ==== */
 
 
 /* ======== /DESKTOP STYLES ======== */
-
-
-
-
-
-
-
-
