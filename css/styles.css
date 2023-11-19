@@ -19,6 +19,8 @@ ol {
 
 img {
     display: block;
+    max-width: 100%;
+    width: auto;
 }
 
 
@@ -61,6 +63,7 @@ body {
 .container {    
     padding-left: 16px;
     padding-right: 16px;
+    margin: 0 auto;
 }
 /* ======== /COMMON STYLES ======== */
 
@@ -188,10 +191,23 @@ body {
     .mobile-links-item-tel {
         margin-top: 168px;
         margin-bottom: 24px;
+        font-family: Roboto;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #4D5AE5;
+
     }
 
     .mobile-links-item-email {
         margin-bottom: 48px;
+        font-family: Roboto;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #434455;
     }
 
     .contacts-link-tel {
@@ -699,6 +715,15 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     margin-bottom: 72px;
 }
 
+.portfolio {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+
 .portfolio-text {
     margin-top: 8px;
     font-family: 'Roboto', sans-serif;
@@ -757,16 +782,13 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 }
 
 .wrap-footer {   
-    margin-right: auto;
-    margin-left: auto;
-    width: 288px;
+    max-width: 320px;
 }
 
 .logotype-footer {    
     display: flex;
     align-items: center;
-    justify-content: center;    
-    width: 288px;   
+    justify-content: center;      
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 700;
@@ -784,7 +806,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     margin-left: auto;
     margin-right: auto;
     margin-top: 16px;
-    margin-bottom: 72px;
+    max-width: 264px;    
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -794,11 +816,10 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 }
 
 
-.text-social-media {    
-    margin-right: auto;
-    margin-left: auto;
-    width: 98px;
+.text-social-media {
+    text-align: center;         
     margin-bottom: 16px;
+    margin-top: 72px;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -811,11 +832,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 16px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 72px;
-    width: 288px;       
+    gap: 16px;             
 }
 
 .footer-sosial {
@@ -848,8 +865,9 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 }
 
 .footer-form {
+    text-align: center;
     margin-bottom: 16px;
-    margin-left: 80px;
+    margin-top: 72px;   
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -857,9 +875,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     color: #ffffff;
 }
 
-.footer-form-email {
-    margin-right: auto;
-    margin-left: auto;
+.footer-form-email {    
     width: 288px;
     height: 40px;
     border: 1px solid #ffffff;
@@ -907,9 +923,6 @@ input::placeholder {
 .footer-button-submit:focus {
     color: #ffffff;
 }
-
-
-
 /* ======== /FOOTER MOBILE STYLE =========== */
 
 /* ======== /BODY MOBILE STYLES ======== */
@@ -1391,7 +1404,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 
 /*======= /OUR PORTFOLIO TABLET STYLE ==== */
 
-/*======= OUR FOOTER TABLET STYLE ==== */
+/*======= FOOTER TABLET STYLE ==== */
 
 .footer-logo {
     margin-right: 0px;
@@ -1399,14 +1412,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 }
 
 .logotype-footer {
-    display: flex;
-    font-family: 'Raleway', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #4d5ae5;
+    justify-content: left;
 }
 
 .span-studio {
@@ -1426,21 +1432,11 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
     margin-bottom: 0;
 }
 
-.text-social-media {
-    margin-bottom: 16px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #FFFFFF;
-    margin-left: 0;
-    margin-right: 0;
+.text-social-media {    
+    text-align: left;
 }
 
 .footer-social-icon {
-    display: flex;
-    gap: 16px;
     margin-left: 0;
     margin-right: 0;
 }
@@ -1476,10 +1472,9 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 
 .wrap-footer {
     display: flex;
-    align-items: baseline;
-    gap: 24px;    
-    margin-left: 0;
-    margin-right: 0;    
+    align-items: baseline;    
+    gap: 24px;   
+    max-width: 768px;
 }
 
 .wrap-footer-tab {
@@ -1487,10 +1482,9 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 }
 
 .footer-form {
-    margin-bottom: 16px;
-    margin-left: 80px;
-    margin-right: 0;
-    margin-left: 0;
+    margin-left: 108px;
+    text-align: left;
+    margin-bottom: 16px;   
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -1501,7 +1495,9 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 .footer-form-customer {
     display: flex;
     gap: 24px;
-    margin-left: 80px;
+    flex-wrap: wrap;
+    margin-left: 108px;
+    align-items: center;    
 }
 
 .footer-form-email {
@@ -1531,57 +1527,40 @@ input::placeholder {
     align-items: center;
     min-width: 165px;
     height: 40px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    cursor: pointer;
-    border: none;
-    border-radius: 4px;
-    color: #ffffff;
-    background-color: #4D5AE5;
     margin-right: 0;
     margin-left: 0;
+    margin-top: 0;
 }
 
-.footer-send-button {
-    margin-left: 16px;
-}
 
 .footer-button-submit:hover,
 .footer-button-submit:focus {
     color: #ffffff;
 }
-/*======= /OUR FOOTER TABLET STYLE ==== */
-
+/*======= /FOOTER TABLET STYLE ==== */
 }
-
 /* ======== /TABLET STYLES ======== */
-
-
-
-
-
-
-
-
 
 /* ======== DESKTOP STYLES ======== */
 
 @media screen and (min-width: 1158px) {
     .container {
         width: 1158px;
-        margin-left: auto;
-        margin-right: auto;
         padding-left: 15px;
-        padding-right: 15px;
+        padding-right: 15px;               
     }
 
 /* ======== HEADR DESKTOP STYLES ======== */
-    .logtype {
-       margin-right: 76px;
+    .page-navigation {
+        
     }
+
+    .contacts {
+        display: flex;
+        flex-wrap: wrap;
+        width: 345px;        
+    }    
+
 
     .links-item-email {
         margin-bottom: 0;
@@ -1600,9 +1579,11 @@ input::placeholder {
     .list-contacts {
         display: flex;
         gap: 40px;
-    }
-/* ===== /BACKDROP DESCTOP ==== */
+        justify-content: space-between;
+    }  
+    
 
+/* ===== /BACKDROP DESCTOP ==== */
 /* ==== CONTACTS FORM DESCTOP STYLES ==== */    
     .contacts-form-name:focus {
         outline-color: transparent;
@@ -1625,7 +1606,6 @@ input::placeholder {
 
 /* ======== HERO DESKTOP STYLES ======== */
         .hero {
-            max-width: 1440px;
             height: 600px;
             margin-left: auto;
             margin-right: auto;
@@ -1718,11 +1698,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1200px) {
     }
 
     .benefits-text { 
-        font-family: 'Roboto', sans-serif;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #434455;
+        max-width: 264px;        
     }
 
     .imag-column-benefits {
@@ -1835,19 +1811,26 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1200px) {
 /*======= /OUR PORTFOLIO DESKTOP STYLE ==== */
 
 /*====== FOOTER DESKTOP STYLE =========== */
+.wrap-footer {
+    display: flex;
+    align-items: baseline;
+    gap: 0;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 1128px;
+}
+
+.wrap-footer-tab {
+    flex-wrap: nowrap;
+}
+
 .logo-span {
     color: #4D5AE5;
 }
 
-.mail-footer {
-    background-color: #2E2F42;
-    padding: 100px 0;
-
-}
-
 .footer-logo {
     margin-right: 0px;
-    margin-left: 120px;
+    margin-left: 0px;
 }
 
 .logotype-footer {
@@ -1866,13 +1849,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1200px) {
 }
 
 .footer-text {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    margin-top: 17.5px;
-    max-width: 264px;
-    color: #F4F4FD;
+    margin-right: 120px;
 }
 
 .text-social-media {
@@ -1917,18 +1894,6 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1200px) {
 .footer-social-link {
     width: 24px;
     height: 24px;
-}
-
-.wrap-footer {
-    display: flex;
-    align-items: baseline;
-    gap: 0;
-    margin-left: 0;
-    margin-right: 0;    
-}
-
-.wrap-footer-tab {
-    flex-wrap: nowrap;
 }
 
 .footer-form {
