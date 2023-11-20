@@ -612,8 +612,8 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
     background-color: #F4F4FD;
 }
 
@@ -802,6 +802,10 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     color: #F4F4fD;
 }
 
+.footer-sosial-media {
+    margin-top: 16px;
+}
+
 .footer-text {
     margin-left: auto;
     margin-right: auto;
@@ -864,19 +868,17 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     height: 24px;
 }
 
+.footer-button {
+    margin-top: 72px;
+}
+
 .footer-form {
     text-align: center;
-    margin-bottom: 16px;
-    margin-top: 72px;   
+    margin-bottom: 16px;      
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #ffffff;
-}
-
-.footer-form-email {    
-    border: 1px solid #ffffff;
     color: #ffffff;
 }
 
@@ -886,7 +888,7 @@ input::placeholder {
 }
 
 .footer-form-email {
-    width: 264px;
+    width: 100%;
     height: 40px;
     border: 1px solid #ffffff;
     background-color: transparent;
@@ -1293,8 +1295,9 @@ input::placeholder {
         height: 436px;
         margin-left: auto;
         margin-right: auto;
-        padding: 112px 0px;    
-        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/hero/people-office-tablet.jpg);    
+        padding: 112px 0px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/hero/people-office-tablet.jpg);
+             
     }
 
     .main-title {
@@ -1306,60 +1309,58 @@ input::placeholder {
         color: #FFFFFF;
         max-width: 496px;
         margin-left: auto;
-    margin-right: auto;
+        margin-right: auto;
         margin-bottom: 48px;
     }
-}
-
-/* ======== /HERO TABLET STYLES ======== */
-
-@media screen and (min-width: 768px) {
-    .our-benefits {
-            padding: 96px 0;
-        }
-    
-        .imag-benefits {
-            column-gap: 24px;
-            justify-content: center;
-            margin-bottom: 8px;
-        }
-    
-        .icon-benefits {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 24px 100px;
-            width: 264px;
-            height: 112px;
-            border: 1px solid #8E8F99;
-            background-color: #f4f4fd;
-            border-radius: 4px;
-            margin-bottom: 8px;
-        }
-
 }
 
 @media screen and (min-resolution: 192dpi) and (min-width: 768px),
 screen and (min-resolution: 2dppx) and (min-width: 768px),
 screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
     .hero {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/hero/people-office-tablet@2x.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+            url(../images/hero/people-office-tablet@2x.jpg);
+        ;
     }
 }
-
+/* ======== /HERO TABLET STYLES ======== */
  
 @media screen and (min-width: 768px) {
 /*======= OUR BENEFITS TABLET STYLE ==== */
+    .our-benefits {
+        padding: 96px 0;
+    }
+    
+    .imag-benefits {
+        column-gap: 24px;
+        justify-content: center;
+        margin-bottom: 8px;
+    }
+    
+    .icon-benefits {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px 100px;
+        width: 264px;
+        height: 112px;
+        border: 1px solid #8E8F99;
+        background-color: #f4f4fd;
+        border-radius: 4px;
+        margin-bottom: 8px;
+    }
+
     .list-benefits {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        gap: 24px;            
+        gap: 72px 24px;            
     }
 
     .our-list {
-        width: calc((100% - 24px) / 2);        
+        width: calc((100% - 24px) / 2);
+        margin-bottom: 0;
     }
 
     .our-list-tab {
@@ -1378,11 +1379,12 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        gap: 24px;       
+        gap: 64px 24px;       
     }
 
-    .team-personal {
-        width: calc((100% - 24px) / 2);
+        .team-personal {
+    width: calc((100% - 24px) / 2);
+    margin-bottom: 0;
     }
 
     .team-personal-camila {
@@ -1411,8 +1413,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 /*======= FOOTER TABLET STYLE ==== */
 
 .footer-logo {
-    margin-right: 0px;
-    margin-left: 108px;
+    margin-right: 0px;    
 }
 
 .logotype-footer {
@@ -1477,16 +1478,15 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 .wrap-footer {
     display: flex;
     align-items: baseline;    
-    gap: 24px;   
-    max-width: 768px;
+    gap: 72px 24px;   
 }
 
 .wrap-footer-tab {
     flex-wrap: wrap;
+    max-width: 550px;
 }
 
-.footer-form {
-    margin-left: 108px;
+.footer-form {    
     text-align: left;
     margin-bottom: 16px;   
     font-weight: 500;
@@ -1499,8 +1499,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 .footer-form-customer {
     display: flex;
     gap: 24px;
-    flex-wrap: wrap;
-    margin-left: 108px;
+    flex-wrap: wrap;    
     align-items: center;    
 }
 
@@ -1612,7 +1611,8 @@ input::placeholder {
     .hero {
         max-width: 1440px;
         height: 600px;        
-        padding: 188px 0px;        
+        padding: 188px 0px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/hero/people-office-desctop.jpg);
     }
 }
 
@@ -1746,8 +1746,8 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1200px) {
   
 /*======= OUR PORTFOLIO DESKTOP STYLE ==== */
     .our-portfolio {
-        padding-top: 96px;
-        padding-bottom: 96px;
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
 
     .colums-portfolio {
@@ -1810,13 +1810,9 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1200px) {
     }
 
     .footer-logo {
-        margin-right: 0px;
-        margin-left: 0px;
-    }
-
-    .footer-text {
         margin-right: 120px;
-    }
+        margin-left: 0px;
+    }  
 
     .footer-social-icon {
         display: flex;
@@ -1838,7 +1834,10 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1200px) {
 
     .footer-form-customer {
         display: flex;
-        gap: 24px;
+        gap: 24px;        
+    }
+
+    .footer-button {
         margin-left: 80px;
     }
 
