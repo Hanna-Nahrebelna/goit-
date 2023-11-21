@@ -803,7 +803,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 }
 
 .footer-sosial-media {
-    margin-top: 16px;
+    margin-top: 72px;
 }
 
 .footer-text {
@@ -822,8 +822,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 
 .text-social-media {
     text-align: center;         
-    margin-bottom: 16px;
-    margin-top: 72px;
+    margin-bottom: 16px;    
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -1371,6 +1370,10 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
         text-align: left;
     }
 
+    .benefits-text {
+        max-width: none;
+    }
+
 /*======= /OUR BENEFITS TABLET STYLE ==== */
 
 /*======= OUR TEAM TABLET STYLE ==== */
@@ -1437,8 +1440,12 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
     margin-bottom: 0;
 }
 
+.footer-sosial-media {
+    margin-top: 0;
+}
+
 .text-social-media {    
-    text-align: left;
+    text-align: left;    
 }
 
 .footer-social-icon {
@@ -1524,6 +1531,10 @@ input::placeholder {
     opacity: 1;
 }
 
+.footer-button {
+    margin-top: 0;
+}
+
 .footer-button-submit {
     display: flex;
     justify-content: center;
@@ -1554,11 +1565,7 @@ input::placeholder {
     }
 
 /* ======== HEADR DESKTOP STYLES ======== */
-    .page-navigation {
-        
-    }
-
-    .contacts {
+       .contacts {
         display: flex;
         flex-wrap: wrap;
         width: 345px;        
